@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Premier \nFragment"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="45sp" />
+
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/editName"
+        android:hint="Saisir le prénom"
+        android:inputType="textPersonName"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/editAge"
+        android:layout_marginTop="10dp"
+        android:hint="Saisir le nom"
+        android:inputType="textPersonName"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:hint="Saisir l'age"
+        android:inputType="number"
+        android:imeOptions="actionDone"/>
+
+    <android.widget.Button
+        android:id="@+id/buttonPassData"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/editAge"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Partager ces infos"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

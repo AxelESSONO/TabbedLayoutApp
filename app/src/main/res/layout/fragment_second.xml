@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:id="@+id/second_fragment"
+    tools:context=".SecondFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Deuxième \nFragment"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/textFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textName"
+        android:text="Mon prénom"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textAge"
+        android:layout_marginTop="10dp"
+        android:text="Mon nom"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="Mon age"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
